@@ -1,36 +1,47 @@
 {
-  "name": "metamask-inpage-provider",
-  "version": "2.0.1",
+  "name": "nifty-wallet-inpage-provider",
+  "version": "2.0.0",
   "description": "An ethereum provider that connects over a WebExtension port.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "lint": "eslint . --ext js,json",
+    "lint:fix": "eslint . --ext js,json --fix"
   },
   "author": "",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/MetaMask/metamask-inpage-provider.git"
+    "url": "git+ssh://git@github.com/poanetwork/nifty-wallet-inpage-provider.git"
   },
   "keywords": [
     "MetaMask",
+    "NiftyWallet",
     "Ethereum",
     "Provider"
   ],
   "bugs": {
-    "url": "https://github.com/MetaMask/metamask-inpage-provider/issues"
+    "url": "https://github.com/poanetwork/nifty-wallet-inpage-provider/issues"
   },
-  "homepage": "https://github.com/MetaMask/metamask-inpage-provider#readme",
+  "homepage": "https://github.com/poanetwork/nifty-wallet-inpage-provider#readme",
   "dependencies": {
-    "json-rpc-engine": "^5.0.0",
+    "@metamask/safe-event-emitter": "^2.0.0",
+    "eth-rpc-errors": "^4.0.2",
+    "fast-deep-equal": "^2.0.1",
+    "is-stream": "^2.0.0",
+    "json-rpc-engine": "^6.1.0",
     "json-rpc-middleware-stream": "^2.1.1",
-    "loglevel": "^1.6.1",
     "obj-multiplex": "^1.0.0",
-    "obs-store": "^4.0.1",
-    "pump": "^3.0.0",
-    "safe-event-emitter": "^1.0.1"
+    "pump": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.3.4"
+    "@metamask/eslint-config": "^4.1.0",
+    "@types/jest": "^26.0.5",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.18.0",
+    "eslint-plugin-json": "^2.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^26.1.0"
   }
 }
