@@ -69,7 +69,7 @@ module.exports = class MetaMaskInpageProvider extends SafeEventEmitter {
     this._log = logger
     this.isMetaMask = true
     this.isNiftyWallet = true
-
+    this.isXDCPayWallet = true
     this.setMaxListeners(maxEventListeners)
 
     // private state, kept here in part for use in the _metamask proxy
